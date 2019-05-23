@@ -2,15 +2,11 @@
 
 * {
     margin: 0;
-    background-image: url("images/bgwhiteopacity.gif");
-     background-size: 6%;
-     background-position: center;
-     background-repeat: repeat;
 }
 
 
 body {
-    background: rgb(93, 2, 154);
+    background: black;
     /* background: #FFC001; */
     background-image: url("images/bgwhiteopacity.gif");
      background-size: 6%;
