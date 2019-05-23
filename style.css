@@ -1,0 +1,154 @@
+/*------------- main -------------*/ 
+
+* {
+    margin: 0;
+}
+
+
+body {
+    background: rgb(93, 2, 154);
+    /* background: #FFC001; */
+    background-image: url("images/bgwhiteopacity.gif");
+     background-size: 6%;
+     background-position: center;
+     background-repeat: repeat;
+}
+
+/*------------- navsection -------------*/
+
+.navsection {
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.topsection {
+    /* border: solid 1px green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+.topsection img {
+    height: 2rem;
+}
+
+.middlesection {
+    /* border: solid 1px green; */
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.middlesection a {
+    /* border: solid 1px yellow; */
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.middlesection img {
+    height: auto;
+}
+
+.bottomsection {
+    /* border: solid 1px green; */
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+
+#topsection {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    border-bottom: solid 2px white;
+    padding-bottom: 10px;
+    width: 7rem;
+    text-align: right;
+}
+
+.bottomsection a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    border-top: solid 2px white;
+    padding-top: 10px;
+    width: 7rem;
+}
+
+#bottomsectionr {
+    text-align: right;
+}
+/*------------- namesection -------------*/
+
+.namesection {
+    position: fixed;
+    /* or absolute */
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.name {
+    width: 200px;
+    height: auto;
+}
+
+.name:hover {
+    animation: grow 2s;
+    transform: 1s;
+    weight: 500px;
+}
+
+@keyframes grow{
+    1% {
+        width: 200px;
+        transform: rotate(0deg);
+        background-image: none;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    10% {
+        width: 500px;
+        transform: rotate(3deg);
+        /* background-image: url("images/mike.png"); */
+             background-size: 80%;
+             background-position: bottom center;
+             background-repeat: no-repeat;
+             background-color: blue;
+             padding: 1000px;
+             z-index: 0;
+
+    }
+
+     90% {
+         width: 500px;
+         transform: rotate(3deg);
+         /* background-image: url("images/mike.png"); */
+         background-size: 80%;
+         background-position: bottom center;
+         background-repeat: no-repeat;
+         background-color: blue;
+         padding: 1000px;
+         z-index: 0;
+     }
+}
