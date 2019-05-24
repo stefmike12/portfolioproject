@@ -8,7 +8,7 @@
 body {
     /* background: rgb(255, 255, 255); */
     background: #FFC001;
-    background-image: url("images/bgpurp1.gif");
+    background-image: none;
      background-size: 6%;
      background-position: center;
      background-repeat: repeat;
@@ -38,6 +38,10 @@ h1 {
     justify-content: space-between;
     height: 100vh;
     width: 100%;
+}
+#navsection-index {
+    background-image: url("images/bgpurp1.gif") !important;
+    background-size: 6%;
 }
 
 #navsection-contact {
