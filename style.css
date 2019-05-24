@@ -6,12 +6,27 @@
 
 
 body {
-    background: black;
-    /* background: #FFC001; */
-    background-image: url("images/bgwhiteopacity.gif");
+    /* background: rgb(255, 255, 255); */
+    background: #FFC001;
+    background-image: url("images/bgpurp1.gif");
      background-size: 6%;
      background-position: center;
      background-repeat: repeat;
+}
+
+h1 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    font-size: 4rem;
+    padding: 2rem 5px;
+    color: white;
+
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
 }
 
 /*------------- navsection -------------*/
@@ -22,6 +37,22 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    width: 100%;
+}
+
+#navsection-contact {
+    background-image: url("images/bgpury1.gif") !important;
+    background-size: 6%;
+}
+
+#navsection-projecten {
+    background-image: url("images/bg6.gif") !important;
+    background-size: 6%;
+}
+
+#navsection-over {
+    background-image: url("images/bgwhiteopacitychererflipv.gif") !important;
+    background-size: 6%;
 }
 
 .topsection {
@@ -37,13 +68,18 @@ body {
 }
 
 .middlesection {
+    justify-content: space-between;
+    display: flex;
+    
+}
+.middlesectionicons {
     /* border: solid 1px green; */
     display: flex;
-    flex-direction: column;
     margin: 2rem;
+    flex-direction: column;
 }
 
-.middlesection a {
+.middlesectionicons a {
     /* border: solid 1px yellow; */
     display: flex;
     justify-content: flex-end;
@@ -78,6 +114,7 @@ body {
     text-align: right;
 }
 
+
 .bottomsection a {
     text-decoration: none;
     outline: none;
@@ -95,6 +132,21 @@ body {
 #bottomsectionr {
     text-align: right;
 }
+
+#topsection:hover {
+        color: #FF4343 !important;
+         border-bottom: 2px solid #FF4343;
+}
+
+.bottomsection a:hover {
+    color: #FF4343 !important;
+    border-top: 2px solid #FF4343;
+}
+
+.bottomsection-contactr {
+    color: rgb(0, 0, 0) !important;
+    border-top: solid 2px rgb(0, 0, 0) !important;
+}
 /*------------- namesection -------------*/
 
 .namesection {
@@ -104,7 +156,6 @@ body {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    z-index: 10;
 }
 
 .name {
@@ -113,8 +164,8 @@ body {
 }
 
 .name:hover {
-    animation: grow 2s;
-    transform: 1s;
+    animation: grow 1s;
+    transform: 300ms;
     weight: 500px;
 }
 
@@ -128,27 +179,96 @@ body {
     }
 
     10% {
-        width: 500px;
-        transform: rotate(3deg);
+        width: 210px;
+        transform: rotate(0deg);
         /* background-image: url("images/mike.png"); */
-             background-size: 80%;
-             background-position: bottom center;
-             background-repeat: no-repeat;
-             background-color: blue;
-             padding: 1000px;
-             z-index: 0;
-
     }
 
      90% {
-         width: 500px;
-         transform: rotate(3deg);
+         width: 210px;
+         transform: rotate(0deg);
          /* background-image: url("images/mike.png"); */
-         background-size: 80%;
-         background-position: bottom center;
-         background-repeat: no-repeat;
-         background-color: blue;
-         padding: 1000px;
-         z-index: 0;
      }
+
+         100% {
+             width: 200px;
+             transform: rotate(0deg);
+             background-image: none;
+             background-position: bottom center;
+             background-repeat: no-repeat;
+         }
+}
+
+
+/*------------- contact form -------------*/
+
+
+#form {
+    /* width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center; */
+    position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+}
+
+
+.form-control {
+    color: black;
+    ;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    width: 600px;
+}
+
+input {
+    height: 40px;
+}
+
+form textarea {
+    text-align: top;
+}
+
+textarea {
+    resize: none;
+}
+
+form .submit {
+    background: white;
+    border-bottom: none;
+    color: black;
+    border-radius: 2px;
+    float: right;
+    width: 50%;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+form .submit:hover {
+    color: white;
+    background-color: black;
+
+}
+
+.form-control:hover {
+    border-bottom: 2px solid black;
+}
+
+input::after {
+    border-bottom: 2px solid blue !important;
 }
